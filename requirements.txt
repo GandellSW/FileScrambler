@@ -1,5 +1,4 @@
 tox
 black
 flake8
-unittest
 pyinstaller
