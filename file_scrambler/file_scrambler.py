@@ -13,12 +13,11 @@ import logging
 FILENAME = "log.log"
 LEVEL = logging.DEBUG
 
-# logging.basicConfig(filename=FILENAME, level=LEVEL, format="%(asctime)s %(levelname)s: %(message)s")
+logging.basicConfig(filename=FILENAME, level=LEVEL, format="%(asctime)s %(levelname)s: %(message)s")
 
 
 class FileScrambler:
-    """
-    """
+    """ """
 
     def __init__(self):
         pass
@@ -51,11 +50,10 @@ class FileScrambler:
 
     @classmethod
     def _build_output_dir(cls):
-        """
-        """
+        """ """
 
         # determine if application is a script file or frozen exe
-        if getattr(sys, 'frozen', False):
+        if getattr(sys, "frozen", False):
             application_path = os.path.dirname(sys.executable)
         elif __file__:
             application_path = os.path.dirname(__file__)

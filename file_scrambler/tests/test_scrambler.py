@@ -37,8 +37,7 @@ class TestFileScrambler(unittest.TestCase):
         scrambler.FileScrambler()
 
     def test_get_file_list(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -60,8 +59,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), file_list.sort(), "List of files not correct")
 
     def test_get_file_list_txt_type(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -80,8 +78,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), file_list.sort(), "List of files not correct")
 
     def test_get_file_list_ini_type(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -100,8 +97,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), file_list.sort(), "List of files not correct")
 
     def test_scramble_files_list(self):
-        """
-        """
+        """ """
 
         # create  object
         scram = scrambler.FileScrambler()
@@ -116,8 +112,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_scramble_txt_files_list(self):
-        """
-        """
+        """ """
 
         # create  object
         scram = scrambler.FileScrambler()
@@ -132,8 +127,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_scramble_ini_files_list(self):
-        """
-        """
+        """ """
 
         # create  object
         scram = scrambler.FileScrambler()
@@ -148,8 +142,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_rename_files_list(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -174,8 +167,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_rename_txt_files_list(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -197,8 +189,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_rename_ini_files_list(self):
-        """
-        """
+        """ """
 
         # expected file list
         expected_file_list = [
@@ -220,8 +211,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list.sort(), new_file_list.sort(), "List of files not equal")
 
     def test_create_pairs_list(self):
-        """
-        """
+        """ """
 
         # input list
         scramble_file_list = [
@@ -249,8 +239,7 @@ class TestFileScrambler(unittest.TestCase):
         self.assertEqual(expected_file_list, list_of_pairs, "Result is different")
 
     def test_copy(self):
-        """
-        """
+        """ """
 
         file_list = [
             ("file_1.txt", "2.txt"),
@@ -272,8 +261,7 @@ class TestFileScrambler(unittest.TestCase):
                 assert cp.call_args_list[num] == call(pair[0], pair[1])
 
     def test_object_call(self):
-        """
-        """
+        """ """
 
         # create  object
         scram = scrambler.FileScrambler()
